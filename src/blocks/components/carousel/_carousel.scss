@@ -1,0 +1,85 @@
+.carousel {
+  height: 500px;
+  & > .carousel-inner {
+    height: 550px;
+  }
+}
+.carousel-indicators {
+  left: -75%;
+  li {
+    width: 30px;
+    height: 2px;
+    background-color: #005e9e;
+  }
+  bottom: 6%;
+}
+.carousel-control-prev {
+  display: none;
+}
+.carousel-control-next-icon {
+  background-image: url("../../../img/svg/arrow-right.svg");
+  background-attachment: fixed;
+  background-position: center;
+}
+.carousel-control-next {
+  bottom: 25%;
+  right: 0;
+  width: 25px;
+}
+.banner_info {
+  margin-left: 116px;
+  margin-top: 140px;
+  & > .banner_title {
+    font-weight: 800;
+    font-size: 56px;
+    line-height: 130%;
+  }
+  & > .banner_subtitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 130%;
+    margin-top: 15px;
+  }
+}
+
+.banner_img {
+  margin-top: 45px;
+  width: 308px;
+  height: 410px;
+  text-align: center;
+  position: relative;
+}
+.banner {
+  position: relative;
+}
+.banner_dots {
+  position: absolute;
+  right: 25%;
+  bottom: 5%;
+}
+.banner_circle {
+  position: absolute;
+  z-index: -1;
+  left: 61%;
+  top: 3%;
+  height: 480px;
+  width: 480px;
+}
+.banner_halfcircle {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.banner_lowcircle {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -5;
+}
+.banner_btn {
+  margin-top: 41px;
+}
+.banner_cobweb {
+  position: absolute;
+  left: 13%;
+}

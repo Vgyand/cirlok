@@ -1,0 +1,84 @@
+.header {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  border-bottom: solid 1px #efefef;
+  & > .container {
+    display: flex;
+    justify-content: space-between;
+    & > .header_logo {
+      width: 205px;
+      max-height: 55px;
+      @media (max-width: 460px) {
+        width: 30px;
+        height: auto;
+      }
+    }
+    & > .header_input {
+      width: 500px;
+      height: 57px;
+      background: url("../../../img/svg/zoom-question.svg") no-repeat scroll
+        14px 14px;
+      padding-left: 50px;
+      border: none;
+      background-color: #f9f9f9;
+      &:focus {
+        outline: none;
+      }
+      @media (max-width: 460px) {
+        width: 30px;
+      }
+    }
+    & > .header_info {
+      display: flex;
+      text-align: center;
+      & > .header_info-phone {
+        width: 150px;
+      }
+      & > .header_info-town {
+        width: 150px;
+        margin-right: 100px;
+      }
+      @media (max-width: 460px) {
+        display: none;
+      }
+    }
+  }
+}
+.container {
+  max-width: 1400px;
+}
+.header_info-phoneText {
+  color: #005e9e;
+  font-weight: 700;
+}
+.header_info-phoneCall a {
+  font-weight: 400;
+  opacity: 0.7;
+  color: #707070;
+  position: relative;
+}
+.choose:after {
+  content: url("../../../img/svg/arrowMenu.svg");
+  position: absolute;
+  left: 100%;
+  top: 5px;
+}
+button {
+  @include no-btn;
+  font-size: 1rem;
+  background-color: #005e9e;
+  @include btn_anim(1.05, 0.95);
+  color: #f6f6f6;
+  &:hover {
+    background-color: darken(#005e9e, 10%);
+  }
+  width: 155px;
+  height: 56px;
+  border-radius: 6px;
+  font-family: "Manrope", sans-serif;
+  font-weight: 600;
+}
+.header_button-text {
+  margin-left: 8px;
+}

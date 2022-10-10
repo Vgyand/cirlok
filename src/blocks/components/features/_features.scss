@@ -1,0 +1,20 @@
+.features_block {
+  background: linear-gradient(
+    96.91deg,
+    #f9f9f9 0.45%,
+    #fcfcfc 0.46%,
+    #fafafb 100.73%
+  );
+  width: 335px;
+  height: 104px;
+  align-items: center;
+  display: flex;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 130%;
+  justify-content: center;
+  & > span {
+    margin-left: 26px;
+    width: 200px;
+  }
+}

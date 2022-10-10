@@ -1,0 +1,80 @@
+.popular_title {
+  margin-top: 120px;
+  margin-bottom: 70px;
+}
+.popular_card {
+  height: 336px;
+  display: flex;
+  position: relative;
+  background: linear-gradient(
+    96.91deg,
+    #f9f9f9 0.45%,
+    #fcfcfc 0.46%,
+    #fafafb 100.73%
+  );
+  border-radius: 10px;
+  & > .popular_cart-img {
+    width: 278px;
+    height: 147px;
+    margin-right: 40px;
+    margin-top: 55px;
+  }
+  & > .popular_card-func {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-between;
+    padding: 30px;
+  }
+  & > .popular_web {
+    position: absolute;
+    left: 5%;
+  }
+  & > .popular_card-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+.popular_card-title {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 130%;
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 33px;
+  margin-left: 30px;
+}
+.singleItem {
+  margin-left: 0;
+}
+.singleImg {
+  margin-top: 22px;
+  width: 163px;
+  height: 163px;
+}
+.popular_card-btn {
+  background-color: transparent;
+  color: transparent;
+  width: 10px;
+  height: 10px;
+}
+.popular_card-btn:focus {
+  color: transparent;
+  background-color: transparent;
+}
+.info {
+  display: none;
+  position: absolute;
+  padding: 20px;
+  background-color: #0059ee;
+  opacity: 0.8;
+  height: 100%;
+  border-radius: 6px;
+  width: 95%;
+}
+.close {
+  color: white;
+}

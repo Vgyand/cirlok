@@ -1,0 +1,16 @@
+extends layouts/default
+include helpers/mixins
+
+block variables
+	- const title = "Cir-lok"
+
+block content
+	include ../blocks/modules/header/header
+	include ../blocks/modules/navigation/nav
+	include ../blocks/modules/banner/banner
+	include ../blocks/components/features/features
+	include ../blocks/modules/popular/popular
+	include ../blocks/modules/footer/footer
+block scripts
+	script(src="js/vendor.js")
+	script(src="js/main.js")

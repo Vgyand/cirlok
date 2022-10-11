@@ -18,6 +18,11 @@
     height: 147px;
     margin-right: 40px;
     margin-top: 55px;
+    @media (max-width: 460px) {
+      width: 288px;
+      height: 100px;
+      position: absolute;
+    }
   }
   & > .popular_card-func {
     display: flex;
@@ -46,14 +51,23 @@
   align-items: flex-end;
   margin-bottom: 33px;
   margin-left: 30px;
+  @media (max-width: 460px) {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 130%;
+  }
 }
 .singleItem {
   margin-left: 0;
 }
 .singleImg {
-  margin-top: 22px;
   width: 163px;
   height: 163px;
+  @media (max-width: 460px) {
+    width: 115px;
+    height: 100px;
+    margin-top: 50px;
+  }
 }
 .popular_card-btn {
   background-color: transparent;
@@ -77,4 +91,14 @@
 }
 .close {
   color: white;
+}
+.popular_web {
+  @media (max-width: 460px) {
+    display: none;
+  }
+}
+.popular_card {
+  @media (max-width: 460px) {
+    width: 209px;
+  }
 }

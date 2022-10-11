@@ -33,12 +33,23 @@
     font-weight: 800;
     font-size: 56px;
     line-height: 130%;
+    @media (max-width: 460px) {
+      font-family: "Manrope";
+      font-style: normal;
+      font-weight: 800;
+      font-size: 32px;
+      line-height: 130%;
+    }
   }
   & > .banner_subtitle {
     font-weight: 500;
     font-size: 20px;
     line-height: 130%;
     margin-top: 15px;
+  }
+  @media (max-width: 460px) {
+    margin-left: 14px;
+    margin-top: 64px;
   }
 }
 
@@ -48,6 +59,14 @@
   height: 410px;
   text-align: center;
   position: relative;
+  @media (max-width: 460px) {
+    position: absolute;
+    width: 100px !important;
+    height: 160px !important;
+    right: 35%;
+    bottom: 0;
+    z-index: -5;
+  }
 }
 .banner {
   position: relative;
@@ -56,6 +75,9 @@
   position: absolute;
   right: 25%;
   bottom: 5%;
+  @media (max-width: 460px) {
+    display: none;
+  }
 }
 .banner_circle {
   position: absolute;
@@ -64,17 +86,26 @@
   top: 3%;
   height: 480px;
   width: 480px;
+  @media (max-width: 460px) {
+    display: none;
+  }
 }
 .banner_halfcircle {
   position: absolute;
   top: 0;
   left: 0;
+  @media (max-width: 460px) {
+    display: none;
+  }
 }
 .banner_lowcircle {
   position: absolute;
   right: 0;
   bottom: 0;
   z-index: -5;
+  @media (max-width: 460px) {
+    display: none;
+  }
 }
 .banner_btn {
   margin-top: 41px;
@@ -82,4 +113,7 @@
 .banner_cobweb {
   position: absolute;
   left: 13%;
+  @media (max-width: 460px) {
+    left: 0;
+  }
 }

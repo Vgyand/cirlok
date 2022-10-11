@@ -6,13 +6,14 @@
   & > .container {
     display: flex;
     justify-content: space-between;
+    & > .header_button-desktop {
+      @media (max-width: 460px) {
+        display: none;
+      }
+    }
     & > .header_logo {
       width: 205px;
       max-height: 55px;
-      @media (max-width: 460px) {
-        width: 30px;
-        height: auto;
-      }
     }
     & > .header_input {
       width: 500px;
@@ -27,6 +28,7 @@
       }
       @media (max-width: 460px) {
         width: 30px;
+        background-color: transparent;
       }
     }
     & > .header_info {
@@ -81,4 +83,11 @@ button {
 }
 .header_button-text {
   margin-left: 8px;
+}
+.header_button-mobile {
+  display: none;
+  @media (max-width: 460px) {
+    display: block;
+    width: 60px;
+  }
 }

@@ -1,12 +1,16 @@
 header.header
 		.container.header_container
+			button(id="menuBtnDesk").header_button.header_button-mobile
+				img.header_button-icon(src="../../../img/svg/menu.svg", alt="menu")
+				span.header_button-text
 			.header_logo
 				a(href="#")
 					img(src="../../../img/svg/logo.svg", alt="logo")
-			button(id="menuBtn").header_button
+			button(id="menuBtn").header_button.header_button-desktop
 				img.header_button-icon(src="../../../img/svg/menu.svg", alt="menu")
 				span.header_button-text Каталог
 			input(type="text" placeholder="Искать: например Фитинги под приварку").header_input
+			img(src="../../../img/svg/cart.svg", alt="cart")
 			.header_info
 				.header_info-phone
 					div.header_info-phoneText 8 800 333 27 62

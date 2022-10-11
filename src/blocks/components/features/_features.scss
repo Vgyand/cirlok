@@ -18,3 +18,25 @@
     width: 200px;
   }
 }
+@media (max-width: 460px) {
+  .features {
+    margin-top: 50px;
+  }
+  .features_block {
+    width: 200px !important;
+    height: 66px !important;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    background-color: red;
+    margin-top: 10px;
+    img {
+      width: 30px;
+      height: 30px;
+    }
+  }
+  .features_block span {
+    margin-left: 10px;
+    width: 146px;
+  }
+}
